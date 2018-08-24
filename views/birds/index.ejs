@@ -8,7 +8,7 @@
 		<div class="card-panel">
 			<%= b.notes %>
 			<hr>
-			Seen in <%= b.location %> on <% b.createdAt %>
+			Seen in <%= b.location %> on <%= moment(b.createdAt).calendar() %>
 		</div>
 	</div>
 <% }); %>

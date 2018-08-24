@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 var ejsLayouts = require('express-ejs-layouts');
 var express = require('express');
 var flash = require('connect-flash');
+var moment = require('moment');
 var passport = require('./config/passportConfig');
 var session = require('express-session');
 
@@ -29,6 +30,7 @@ app.use(passport.session());
 app.use(function(req, res, next){
 	res.locals.currentUser = req.user;
 	res.locals.alerts = req.flash();
+	res.locals.moment = moment;
 	next();
 });
 
