@@ -1,6 +1,6 @@
-# Auth Boilerplate: how to use
+# Raptor Report
 
-This is the building blocks for auth in an express app, like the foundation.
+More Content coming Soon!
 
 ## what it includes
 
@@ -23,7 +23,6 @@ This is the building blocks for auth in an express app, like the foundation.
 | email | Sting | username field for login |
 | password | Sting | hashed with bcrypt |
 | bob | Date | - |
-| admin | Boolean | Admin or regular user |
 
 > Note: CHange these fields in both the model and migrations files BEFORE running sequelize db:migrate
 
